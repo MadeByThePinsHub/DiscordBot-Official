@@ -1,12 +1,13 @@
 {
   "name": "discordjs-bot",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "A Discord.js bot which uses a Command Handler",
   "main": "node index.js",
   "scripts": {
     "start": "node bot.js"
   },
   "dependencies": {
+    "discord.js": "^11.3.2",
     "express": "^4.16.3"
   },
   "engines": {
