@@ -1,27 +1,16 @@
-Welcome to Glitch
-=================
+# Discord.js Bot
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+A Discord bot which uses the Discord.js Library
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+## Prerequisites
 
-Find out more [about Glitch](https://glitch.com/about).
+You'll need:
+ - A [Discord account](https://discordapp.com/register)
+ - Permission to add accounts to a server, or your own server
 
+## Steps to set up:
 
-Your Project
-------------
-
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
-
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
-
-
-Made by [Fog Creek](https://fogcreek.com/)
--------------------
-
-\ ゜o゜)ノ
+1. Create an App here: [https://discordapp.com/developers/applications/me](https://discordapp.com/developers/applications/me)
+2. Create an App Bot User for your App by clicking "Create a Bot User"
+3. Add the App Bot User to your Discord server using this link: `https://discordapp.com/oauth2/authorize?&client_id=<CLIENT ID>&scope=bot&permissions=0` replacing `<CLIENT_ID>` with the Client ID found on the page of your App
+4. Set the `TOKEN` value in `.env` using the Bot User token ("click to reveal" in the App page under the bot username)
