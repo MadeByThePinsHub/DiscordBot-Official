@@ -1,7 +1,5 @@
-// server.js
-// where your node app starts
-
-// init project
+const Discord = require("discord.js");
+const client = new Discord.Client();
 var express = require('express');
 var app = express();
 
