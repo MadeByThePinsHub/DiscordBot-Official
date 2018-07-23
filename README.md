@@ -19,6 +19,8 @@ You'll need:
 
 Unlike bots which store commands in bot.js, this bot stores commands in the commands folder.
 
+For now the prefix is `!`, You can change it in the `.env` file.
+
 We're using the [Discord.js](https://discord.js.org/#/) library to interact with the Discord API.
 
 To check if the bot is working, check the logs to find "Connected!"
