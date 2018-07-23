@@ -2,6 +2,8 @@
 
 A Discord bot which uses the Discord.js Library, with this bot we're using a Command Handler
 
+**Notice:** If you want to make your Glitch private, click on the down arrow next to your project name then press the lock button.
+
 ## Prerequisites
 
 You'll need:
