@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const fs = require("fs");
-const http = require("http");
 const express = require("express");
 const app = express();
 
@@ -16,11 +15,6 @@ app.get("/", (request, response) => {
   console.log("Ping received!");
   response.sendStatus(200);
 });
-
-app.listen(process.env.PORT);
-setInterval(() => {
-  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
-}, 280000);
 
 // This loop reads the /events/ folder and attaches each event file to the appropriate event.
 fs.readdir("./events/", (err, files) => {
