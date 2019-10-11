@@ -7,10 +7,7 @@ npm install discordjs
 npm install node-opus
 
 # Continue with optional packages
-npm install bufferutil
-npm install hammerandchisel/erlpack
-npm install libsodium-wrappers # replace with 'pnpm install sodium' (inside these '') if you want
-npm install @discordjs/uws
+npm install bufferutil hammerandchisel/erlpack libsodium-wrappers @discordjs/uws
 
 # When done, run the dependency installer again for checks. See the logs for more info.
 npm install
