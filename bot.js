@@ -9,11 +9,11 @@ const discord_token = process.env.TOKEN;
 const prefix = process.env.PREFIX;
 
 client.on("ready", () => {
-  console.log("Connected!");
+  console.log("Connected to Discord API!");
 });
 
 app.get("/", (request, response) => {
-  console.log("Ping received!");
+  console.log("We received an ping or an command. The bot will reply.");
   response.sendStatus(200);
 });
 
@@ -23,13 +23,15 @@ setInterval(() => {
   http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
 }, 280000);
 
-
 client.on("message", message => {
   if (message.author.bot) return;
   if (message.content.indexOf(prefix) !== 0) return;
 
   // This is the best way to define args. Trust me.
-  const args = message.content.slice(prefix.length).trim().split(/ +/g);
+  const args = message.content
+    .slice(prefix.length)
+    .trim()
+    .split(/ +/g);
   const command = args.shift().toLowerCase();
 
   // The list of if/else is replaced with those simple 2 lines:
