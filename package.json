@@ -1,5 +1,5 @@
 {
-  "name": "discordjs-bot",
+  "name": "thepinsteam-discordbot",
   "version": "1.0.0",
   "description": "A Discord.js bot which uses a Command Handler",
   "main": "node index.js",
@@ -7,8 +7,9 @@
     "start": "node bot.js"
   },
   "dependencies": {
-    "discord.js": "^11.4.2",
-    "express": "^4.16.4"
+    "discord.js": "^11.5.1",
+    "express": "^4.16.4",
+    "node-opus": "0.3.2"
   },
   "engines": {
     "node": "8.x"
