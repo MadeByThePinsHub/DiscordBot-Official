@@ -1,0 +1,7 @@
+cache:
+  npm: false
+before_install:
+  - curl -L https://unpkg.com/@pnpm/self-installer | node
+install:
+  - pnpm install
+  - node bot.js

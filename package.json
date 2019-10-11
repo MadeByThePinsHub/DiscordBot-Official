@@ -4,12 +4,17 @@
   "description": "A Discord.js bot which uses a Command Handler",
   "main": "node index.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "bash bootup.sh"
   },
   "dependencies": {
+    "@discordjs/uws": "^11.149.1",
+    "bufferutil": "^4.0.1",
     "discord.js": "^11.5.1",
+    "erlpack": "github:hammerandchisel/erlpack",
     "express": "^4.16.4",
-    "node-opus": "0.3.2"
+    "libsodium-wrappers": "^0.7.5",
+    "node-opus": "^0.3.2",
+    "pnpm": "^4.0.1"
   },
   "engines": {
     "node": "8.x"
