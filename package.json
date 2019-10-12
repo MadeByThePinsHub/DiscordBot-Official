@@ -17,7 +17,7 @@
     "pnpm": "^4.0.1"
   },
   "engines": {
-    "node": "8.x"
+    "node": "12.x"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/hello-express"
