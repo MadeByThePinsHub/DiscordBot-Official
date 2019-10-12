@@ -13,8 +13,7 @@
     "erlpack": "github:hammerandchisel/erlpack",
     "express": "^4.16.4",
     "libsodium-wrappers": "^0.7.5",
-    "node-opus": "^0.3.2",
-    "pnpm": "^4.0.1"
+    "node-opus": "^0.3.2"
   },
   "engines": {
     "node": "12.x"

@@ -8,7 +8,7 @@ You'll need:
 
 - A [Discord account](https://discordapp.com/register)
 - Permission to add accounts to a server, or your own server
-- Git, Node.js (atleast latest 8.x release) and NPM or PNPM if using this on your machine
+- Git, Node.js (atleast latest 12.x release) and NPM or PNPM if using this on your machine
 
 ## How to deploy
 
