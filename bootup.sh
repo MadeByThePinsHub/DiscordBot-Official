@@ -9,8 +9,5 @@ npm install node-opus
 # Continue with optional packages
 npm install bufferutil hammerandchisel/erlpack libsodium-wrappers @discordjs/uws
 
-# When done, run the dependency installer again for checks. See the logs for more info.
-npm install
-
 # If checks are successful, run the bot.
 node bot.js
