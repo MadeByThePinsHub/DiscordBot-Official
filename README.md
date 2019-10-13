@@ -19,6 +19,11 @@ You'll need:
 4. Add the App Bot User to your Discord server using this link: `https://discordapp.com/oauth2/authorize?&client_id=<CLIENT ID>&scope=bot&permissions=2146958591` replacing `<CLIENT_ID>` with the Client ID found on the page of your App
 5. Set the `TOKEN` value in `.env` using the Bot User token ("click to reveal" in the App page under the bot username)
 
+### On GitLab
+1. [Fork the app](https://gitlab.com/MadeByThePinsTeam-DevLabs/DiscordBot-Official/-/forks/new) from the GitLab mirror.
+2. Under **Continuous Integration/Continuous Development settings** in your fork, find Variables. Besides it, click `Expand` to show options.
+3. 
+
 ### Local Deployment
 1. Fork this app from [mirrored GitLab](https://gitlab.com/MadeByThePinsTeam-DevLabs/DiscordBot-Official) or [GitHub one](https://gitlab.com/MadeByThePinsHub/DiscordBot-Official) then clone to your machine.
 
