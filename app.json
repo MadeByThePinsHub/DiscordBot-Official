@@ -1,0 +1,40 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/discordjs/discord.js"
+    },
+    {
+      "url": "https://github.com/Rantanen/node-opus"
+    },
+    {
+      "url": "https://github.com/websockets/bufferutil"
+    },
+    {
+      "url": "https://github.com/jedisct1/libsodium.js"
+    },
+    {
+      "url": "https://github.com/discordjs/uws"
+    }
+  ],
+  "description": "The official Discord bot, developed by the Pins.",
+  "env": {
+    "DISCORD_TOKEN": "REPLACE_WITH_YOUR_OWN",
+    "PREFIX": "!",
+    "DEPLOYMENT_KEY": {
+      "generator": "secret"
+    }
+  },
+  "formation": {
+  },
+  "name": "DiscordBot-MadeByThePins",
+  "scripts": {
+    "postdeploy": "node bot.js"
+  },
+  "stack": "heroku-18"
+}
