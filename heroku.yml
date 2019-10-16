@@ -1,0 +1,7 @@
+build:
+  config:
+    NODE_ENV: production
+    PREFIX: !
+run:
+  nodejs: npm install
+  nodejs: node bot.js
