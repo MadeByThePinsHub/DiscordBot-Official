@@ -43,4 +43,24 @@ client.on("message", message => {
   }
 });
 
+client.on('message', message => {
+  const channel = (ch => ch.name === 'botstatus-updates');
+    if (!channel) {
+      const botstatus_embed = new RichEmbed()
+        // Set the title of the field
+        .setTitle('Bot now online')
+        // Set the color of the embed
+        .setColor(0x49FC00)
+        // Set the main content of the embed
+        .setDescription('Hello, this is a slick embed!');
+      message.channel.send(botstatus_embed);
+    } else {
+        const error_botstatus_embed = new RichEmbed()
+          .setTitle('No channel found')
+          .setDescription('The bot tried to')
+    }
+  }
+});
+
+
 client.login(discord_token);

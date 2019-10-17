@@ -5,26 +5,11 @@
   "buildpacks": [
     {
       "url": "heroku/nodejs"
-    },
-    {
-      "url": "https://github.com/discordjs/discord.js"
-    },
-    {
-      "url": "https://github.com/Rantanen/node-opus"
-    },
-    {
-      "url": "https://github.com/websockets/bufferutil"
-    },
-    {
-      "url": "https://github.com/jedisct1/libsodium.js"
-    },
-    {
-      "url": "https://github.com/discordjs/uws"
     }
   ],
   "description": "The official Discord bot, developed by the Pins.",
   "env": {
-    "DISCORD_TOKEN": "REPLACE_WITH_YOUR_OWN",
+    "DISCORD_TOKEN": "NjMyMTY0MTkwOTU3NzMxODQw.Xagabw.3OxsddreGR2Ig1INiaeuiVQmTkw", // Change with your own token
     "PREFIX": "!",
     "DEPLOYMENT_KEY": {
       "generator": "secret"
