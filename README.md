@@ -12,7 +12,7 @@ You'll need:
 
 ## How to deploy
 
-### On Glitch
+### On Glitch (will be returning soon)
 1. [Remix the app](https://glitch.com/edit/#!/remix/soapy-option) on Glitch
 2. Create an App here: [https://discordapp.com/developers/applications/me](https://discordapp.com/developers/applications/me)
 3. Create an App Bot User for your App by clicking "Create a Bot User"
@@ -37,4 +37,4 @@ For now the prefix is `!`, You can change it in the `.env` file.
 
 We're using the [Discord.js](https://discord.js.org/#/) library to interact with the Discord API.
 
-To check if the bot is working, check the logs to find "Connected to Discord API!"
+To check if the bot is working, check the logs to find "Successfully connected to Discord API! To avoid any service interrputions, check your cloud service's documentation about their technical limitations."

@@ -12,7 +12,7 @@
     "DISCORD_TOKEN": "NjMyMTY0MTkwOTU3NzMxODQw.Xagabw.3OxsddreGR2Ig1INiaeuiVQmTkw", // Change with your own token
     "PREFIX": "!",
     "DEPLOYMENT_KEY": {
-      "generator": "secret"
+      "generator": "installation-id"
     }
   },
   "formation": {
