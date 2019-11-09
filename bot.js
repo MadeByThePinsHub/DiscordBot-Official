@@ -21,7 +21,7 @@ app.get("/", (request, response) => {
 // This keeps the bot running 24/7
 app.listen(process.env.PORT);
 setInterval(() => {
-  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`); // Change this into what your app domain you use.
+  http.get(`http://${process.env.PROJECT_DOMAIN}`); // Change this into what your app domain you use on configuring environment variables.
 }, 280000);
 
 client.on("message", message => {
@@ -55,13 +55,16 @@ client.on('check bot status', message => {
         // Set the main content of the embed
         .setDescription('Congratulations! The bot is now up and running.');
       message.channel.send(botstatus_embed);
+      return
     } else {
         const error_botstatus_embed = new RichEmbed()
           .setTitle('No channel found')
           .setDescription('The bot tried to look for `#botstatus-updates` channel, but nothing we found.')
+        if (message.author.bot) return;
+        if (message.content.indexOf(prefix) !== 0) return
     }
   }
-});
+);
 
 
 client.login(discord_token);

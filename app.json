@@ -1,25 +1,27 @@
 {
-  "addons": [
-
+  "name": "The Pins Team Discord Bot",
+  "description": "Official Discord Bot built by the Pins team",
+  "keywords": [
+    "discord",
+    "heroku",
+    "nodejs",
+    "discordjs"
   ],
-  "buildpacks": [
-    {
-      "url": "heroku/nodejs"
+  "repository": "https://gitlab.com/MadeByThePinsTeam-DevLabs/DiscordBot-Official",
+  "success_url": "https://deploy.devhubcentral.ml/discordbot/heroku",
+  "website": "https://gitlab.com/MadeByThePinsTeam-DevLabs/DiscordBot-Official",
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
     }
-  ],
-  "description": "The official Discord bot, developed by the Pins.",
+  },
+  "stack": "heroku-18",
   "env": {
-    "DISCORD_TOKEN": "NjMyMTY0MTkwOTU3NzMxODQw.Xagabw.3OxsddreGR2Ig1INiaeuiVQmTkw", // Change with your own token
+    "DISCORD_TOKEN": "NjMyMTY0MTkwOTU3NzMxODQw.Xagabw.3OxsddreGR2Ig1INiaeuiVQmTkw", // Change into your own token.
     "PREFIX": "!",
     "DEPLOYMENT_KEY": {
       "generator": "installation-id"
     }
-  },
-  "formation": {
-  },
-  "name": "DiscordBot-MadeByThePins",
-  "scripts": {
-    "postdeploy": "node bot.js"
-  },
-  "stack": "heroku-18"
+  }
 }

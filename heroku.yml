@@ -1,7 +1,5 @@
 build:
-  config:
-    NODE_ENV: production
-    PREFIX: !
+  nodejs:
+    worker: npm install
 run:
-  nodejs: npm install
-  nodejs: node bot.js
+  worker: npm start
